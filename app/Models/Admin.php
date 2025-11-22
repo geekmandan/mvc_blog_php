@@ -9,12 +9,20 @@ class Admin {
     }
 
     public function checkLogin($username, $password) {
-        $stmt = $this->db->prepare("SELECT * FROM admins WHERE username=:username LIMIT 1");
-        $stmt->execute([':username'=>$username]);
+        $stmt = $this->db->prepare("SELECT * FROM admins WHERE username = :username LIMIT 1");
+        $stmt->execute([':username' => $username]);
         $admin = $stmt->fetch(PDO::FETCH_ASSOC);
-        if($admin && password_verify($password, $admin['password'])) {
-            return $admin;
+
+        if ($admin) {
+            // Если пароль простой текст:
+            if ($admin['password'] === $password) {
+                return $admin;
+            }
+
+            // Если пароль хэшированный:
+            // if (password_verify($password, $admin['password'])) return $admin;
         }
+
         return false;
     }
 }

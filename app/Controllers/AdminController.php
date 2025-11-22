@@ -5,6 +5,7 @@ require_once '../app/Models/Post.php';
 require_once '../app/Models/Category.php';
 require_once '../app/Models/Admin.php';
 
+
 class AdminController {
     private $postModel;
     private $categoryModel;
@@ -25,11 +26,11 @@ class AdminController {
 
     public function login() {
         $error = '';
-        if($_SERVER['REQUEST_METHOD']==='POST') {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $username = $_POST['username'] ?? '';
+            $password = $_POST['password'] ?? '';
             $admin = $this->adminModel->checkLogin($username, $password);
-            if($admin) {
+            if ($admin) {
                 $_SESSION['admin_logged'] = true;
                 header("Location: ?route=admin");
                 exit;
@@ -37,6 +38,7 @@ class AdminController {
                 $error = "Invalid username or password";
             }
         }
+
         require '../app/Views/admin/login.php';
     }
 
