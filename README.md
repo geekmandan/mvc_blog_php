@@ -58,7 +58,7 @@ To log in to the admin panel, follow these steps:
 
 ## Recent Updates / Changelog
 
-- Added **promo.php** page with description, features, images, and "Start Using" button.  
+- Added **promo.php** (index.php) page with description, features, images, and "Start Using" button.  
 - Added **modal popup** functionality for images on the promo page.  
 - Added **Add Admin form** (`add_admin.php`) to simplify admin creation.  
 - Fixed **admin login** to properly handle empty or hashed passwords.  
