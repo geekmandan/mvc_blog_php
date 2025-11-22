@@ -37,6 +37,8 @@ To log in to the admin panel, follow these steps:
 
 - Clicking on the images opens them in a **modal popup** for better viewing.
 
+![Promo Page](https://sun9-51.userapi.com/s/v1/ig2/TGz6c0Qr-TaZd2bbrOt91TSH3ySw1d03Q-g5iVgYgc_jq-hU3rXvMBS4G4tb09XXA_qk-sszYfCHasUDTxeE9XPX.jpg?quality=95&as=32x16,48x24,72x36,108x54,160x79,240x119,360x179,480x238,540x268,640x318,720x358,1080x537,1280x636&from=bu&cs=1280x0)
+
 ## Adding Admin via Form
 
 - You can now add an admin using the form at:  
