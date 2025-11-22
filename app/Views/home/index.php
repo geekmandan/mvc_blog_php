@@ -39,7 +39,7 @@ ob_start();
                         <!-- Content on the right -->
                         <div style="flex:1; display:flex; flex-direction:column;">
                             <!-- Post title -->
-                            <h2 style="margin:0 0 5px 0; margin-top: 10px;">
+                            <h2 style="margin:0 0 5px 0;">
                                 <a style="text-decoration: none;" href="?route=post&id=<?php echo $post['id']; ?>">
                                     <?php echo htmlspecialchars($post['title']); ?>
                                 </a>

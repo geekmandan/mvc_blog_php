@@ -14,13 +14,15 @@ class Admin {
         $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($admin) {
-            // Если пароль простой текст:
-            if ($admin['password'] === $password) {
+
+            if (password_verify($password, $admin['password'])) {
                 return $admin;
             }
 
-            // Если пароль хэшированный:
-            // if (password_verify($password, $admin['password'])) return $admin;
+
+            if ($admin['password'] === $password) {
+                return $admin;
+            }
         }
 
         return false;
