@@ -60,4 +60,7 @@ To log in to the admin panel, follow these steps:
 - Added **modal popup** functionality for images on the promo page.  
 - Added **Add Admin form** (`add_admin.php`) to simplify admin creation.  
 - Fixed **admin login** to properly handle empty or hashed passwords.  
-- Updated inline styles for better readability and structure.  
+- Updated inline styles for better readability and structure.
+
+## Contact
+For questions or suggestions: [rebcoding@gmail.com]
